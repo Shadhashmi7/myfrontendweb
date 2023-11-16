@@ -17,7 +17,7 @@ html,body{
     /* background-color: rgb(48, 48, 151); */
     display: flex;
     padding: 0 150px;
-    gap: 40px;
+    gap: 35px;
     position: fixed;
     align-items: center;
     justify-content: flex-start;
@@ -35,6 +35,7 @@ video{
     width: 100%;
     object-fit: cover;
     position: fixed;
+    z-index: -1;
 }
 
 #main{
@@ -50,7 +51,30 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+text-align: center;
 }
 #page1 h1{
-    font-size: 120px;
+    font-size: 125px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 3px #9ecf18;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+#page1 p{
+    font-size: 16px;
+    font-weight: 500;
+    width: 40%;
 }
